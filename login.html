@@ -1,4 +1,5 @@
 <?php
+
 	session_start();
 
 ?>
@@ -12,18 +13,19 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<center><img src="back1.png"></center>
+			<center><img src="resources/back1.png"></center>
 		</div>
 		<div id="nav">
 		</div>
-		<center><div class="itembox">
+		<center><div class="loginbox">
 				<?php if(isset($_SESSION['badlogin'])){
 					if($_SESSION['badlogin']==true){
 						echo "Please try again";
 					}
+					unset($_SESSION['badlogin']);
 				}
 				?>
-				<form action="login.php" method="post">
+				<form action="php_files/login.php" method="post">
 					<div class="logindetails">
 						<span class="formfont">Username:</span>
 							<input class="textbox" type="text" name="username" size="20" maxlength="20">
@@ -32,13 +34,19 @@
 						<span class="formfont">Password:</span>
 							<input class="textbox" type="password" name="password" size="20" maxlength="20">
 					</div>
+					<div>
+						<br>
+					</div>
+					<!--<div class="g-recaptcha" data-sitekey="6Ld-CA4TAAAAADicP5F1_KcIIBagpsNeE-TG7nip"></div>
+-->
+
 
 					<div id="loginbtn">
 						<br>
 						<input id="loginbutton" type="submit" value="Login">
 					</div>
-					
 				</form>
+				<!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
 		</div></center>
     </div>
 </body>

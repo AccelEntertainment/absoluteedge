@@ -1,4 +1,4 @@
-<?php
+<?php 
 	include 'php_files/functions.php';
 	session_start();
 	clearSessionBools();
@@ -9,9 +9,8 @@
 		header("Location: login.html");
 		exit();
 	}
-
-	
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -25,10 +24,17 @@
 			<center><img src="resources/back1.png"></center>
 		</div>
 		<div id="nav">
+			<ul>
+				<li><a href="index.html">Back to Home</a></li>
+			</ul>
 		</div>
-		<div id="content">
-		</div>
+		<center><div class="createusersbox" style="height:300px">
+			<br>
+			<br>
+			<em>Page Not Found.</em>
+			<br>
+			<br>
+		</div></center>
     </div>
-		
 </body>
 </html>
