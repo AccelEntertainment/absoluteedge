@@ -1,0 +1,26 @@
+/* SQL Marketing Database creation */
+
+drop database accel;
+
+create database accel;
+
+use accel;
+
+create table users (userid int NOT NULL AUTO_INCREMENT, username varchar(
+255) NOT NULL, password varchar(255) NOT NULL, level int not null, firstname varchar(255), lastname varchar(255), PRIMARY KEY (userid));
+
+create table locations (locationid varchar(36) NOT NULL, name varchar(255) NOT NULL, address varchar(255) NOT NULL, city varchar(255) NOT NULL, zip varchar(10) NOT NULL, latitude FLOAT(8,5) NOT NULL, longitude FLOAT(8,5) NOT NULL, PRIMARY KEY(locationid));
+
+insert into users (username, password, level, firstname, lastname) values ("zacharym", "$2y$10$kc5RNma6lNfWh1wZ6nYQBevwP.GEGKojbMT09QgqWGiipQIyvEWdy", "1", "Zach", "Maggio");
+insert into users (username, password, level, firstname, lastname) values ("kurtg", "$2y$10$kc5RNma6lNfWh1wZ6nYQBevwP.GEGKojbMT09QgqWGiipQIyvEWdy", "1", "Kurt", "Guenther");
+
+______________________________________________________________
+
+
+mysql> show databases;
+
+mysql> show tables;
+
+mysql> show columns from users;
+
+
