@@ -14,7 +14,14 @@ create table locations (locationid varchar(36) NOT NULL, name varchar(255) NOT N
 insert into users (username, password, level, firstname, lastname) values ("zacharym", "$2y$10$kc5RNma6lNfWh1wZ6nYQBevwP.GEGKojbMT09QgqWGiipQIyvEWdy", "1", "Zach", "Maggio");
 insert into users (username, password, level, firstname, lastname) values ("kurtg", "$2y$10$kc5RNma6lNfWh1wZ6nYQBevwP.GEGKojbMT09QgqWGiipQIyvEWdy", "1", "Kurt", "Guenther");
 
-______________________________________________________________
+
+
+insert into locations(locationid,name,address,city,zip,latitude,longitude) values ("514bb6a4-47b9-e511-80cd-005056a970f6","103 EAST","103 E LINCOLN","BUCKLEY", "60918", 40.59733, -88.03885);
+insert into locations(locationid,name,address,city,zip,latitude,longitude) values ("415d3c26-47b9-e511-80cd-005056a970f6","121 CLUB","250 S BAER RD","TREMONT", "61568", 40.52373, -89.47203);
+insert into locations(locationid,name,address,city,zip,latitude,longitude) values ("5adbe0fa-43b9-e511-80cd-005056a970f6","14136 LOUNGE","14136 CHICAGO ROAD","DOLTON", "60419", 41.63758, -87.60783);
+insert into locations(locationid,name,address,city,zip,latitude,longitude) values ("85121143-44b9-e511-80cd-005056a970f6","22ND ST DISCOUNT LIQUORS","1325 N 22ND","DECATUR", "62521", 39.85582, -88.92715);
+
+
 
 
 mysql> show databases;
